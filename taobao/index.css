@@ -1,0 +1,829 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+} 
+
+body {
+    height: 100%;
+	width: 100%;
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+    font-family: arial, Helvetica, sans-serif ;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+
+/*   头部信息  */
+.head-top {
+     width: 100%;
+     height: 35px;
+     border-bottom: 1px solid #eee;
+     background-color: #f5f5f5;
+}
+
+.head-top-zhu {
+    width: 990px;
+    height: 35px;
+    margin: 0 224px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    text-align: center;
+}
+
+.head-top-zhukuai {
+    display: inline-block;
+    height: 35px;
+    padding: 0 6px;
+    line-height: 35px;
+    position: relative;
+}
+
+.head-top-zhuwen {
+     display: inline-block;
+     /*position: relative;*/
+     height: 35px;
+     margin-right: 7px;
+     font-size: 12px;
+     line-height: 35px;
+     color: #F22E00;
+     list-style: none;
+     text-decoration: none;
+     text-align: center;
+}
+
+.head-top-zhuwen1 {
+    display: inline-block;
+    /*position: relative;*/
+    margin-right: 7px;
+    font-size: 12px;
+    color: #6C6C6C;
+    text-align: center;
+}
+
+
+.head-tubiao {   /*图标块，这里打赏不插入图标就占个位置块，但效果没能实现*/
+    width: 12px;
+    height: 6px;
+    position: absolute;
+}
+.head-tubiao1 {   /*图标块，这里打赏不插入图标就站占个位置块，但效果没能实现*/
+    width: 13.125px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;   
+}
+
+/*  头部图像  */
+.pc-img {
+    width: 1190px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    /*height: auto;
+    max-width: 100%;
+    vertical-align: top;
+    /*background-image: url("./tb.jpg");*/
+    /*background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+
+/*  图像搜索部分  */
+.pc-imgss1 {
+    display: inline-block;
+    position: relative;
+    
+    left: 50%;
+    transform: translate(-50%,0);
+   /* vertical-align: top;*/
+    background: #fff;
+    padding: 22px 0 23px;
+    text-align: center;
+
+}
+
+.pc-img1 {
+    height: auto;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    /*padding: 22px 0 23px;
+    text-align: center;*/
+}
+
+.pc-search {
+    width: 690px;
+    height: 68px;
+    position: relative;
+    display: inline-block;
+}
+
+.a {   /*简直mmp,原本取名pc-sesrch.border .标签没有生效，是什么情况！！！！
+    是因为border?*还是因为 . 的问题*/
+    width: 687px;
+    height: 34px;
+    position: absolute;
+    border: 3px solid #f03726;
+    border-right: 0; 
+    position: relative;
+}
+
+.ks-combox {
+    width: 687px;
+    height: 39px;
+}
+
+
+
+.text-wrap {
+    display: block;
+   /* overflow: hidden;*/
+    padding: 8px 110px 8px 10px;
+}
+
+.text {
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+    border: 0;
+    width: 100%;
+    outline: 0;
+}
+
+.submit {
+    width: 95px;
+    height: 40px;
+    border: 0;
+    position: absolute;
+    top: -3px;
+    right: 0;
+    background: #f03726;
+    color: #f5f5f2;
+    font-size: 18px;
+}
+
+.pc-search-links {
+    width: 690px;
+    height: 23px;
+    line-height: 23px;
+    padding: 5px 0 0;
+    position: absolute;/*
+
+    /*padding: 5px 0 0;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    width: 690px;*/
+}
+
+.pc-search-links-bottom {
+    color: #9b9b9b;
+    margin-right: 20px;
+    float: left;
+}
+.pc-search-links-bottom:hover {
+    color: #fd3f31;
+}
+
+/*  导航部分  */
+.head-nav {
+    width: 100%;
+    height: 36px;
+    background: #fd3f31;;
+}
+
+.con-wrap {
+    width: 1190px!important;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 36px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+   /* position: absolute; 加了定位后失去了居中效果，为什么？什么时候才应该使用定位*/
+}
+
+.left-nav {
+    width: 240px;
+    height: 36px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.right-nav {
+    /*width: 492px;官网是492宽，但在这里不够放，去掉，有display.*/
+    height: 36px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.left-nav-head {
+    /*position: relative;  有个yi*/
+    display: inline-block;
+    height: 36px;
+
+    text-align:center
+}
+
+.right-nav-head {
+    /*position: relative;  有个yi*/
+    display: inline-block;
+    height: 36px;
+    margin-right: 60px;
+    text-align:center
+}
+
+
+
+/*  侧边导航信息   */
+.con-wrap-1 {
+    width: 1190px!important;
+    height: 528px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left-nav-1 {
+    width: 240px;
+    height: 528px;
+    border: 1px solid #fd3f31;
+    border-top: none;
+   /*position: absolute;*/
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.left-nav-2 {
+    width: 240px;
+    height: 528px;
+
+}
+
+.container {
+    width: 240px;
+    height: 66px;
+    position: absolute;
+}
+
+.container-inner {
+    padding-left: 45px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 61px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    width: 45px;
+    /*float: left;*/
+    margin-left: -45px;
+    line-height: 18px;
+    box-sizing: border-box;
+    padding-top: 12px;
+    position: absolute;
+}   
+
+.title-atbfont {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.title-atbfont-1 {
+    color: #fd3f31;
+}
+
+
+.vvv {
+    width: 195px;
+   
+}
+.chanel {
+    width: 100%;
+    height: 62px;
+    color: #9b9b9b;
+    line-height: 26px;
+    padding: 5px 0;
+    font-size: 0;/*写这行是为了消除标签之间的空格，这个方法对a标签以外的不知道还有没有用
+    ,另外还有一个格式问题，网页里面一句话的内容是不换行的*/
+    /*box-sizing: border-box;
+    display: inline-block;*/
+}
+
+.chanel-tags {
+    color: #bababa;
+    margin: 0 7px;
+    font-size: 12px;
+    /*line-height: 26px;
+    position: relative;*/
+}
+    
+
+/* 图片信息部分*/
+.main-right {
+    width: 940px;
+    height: 528px;
+    margin-left: 10px; 
+    position: absolute;
+    /*vertical-align: middle;垂直居中表达式子*/
+    top: -396px;     /*为了矫正位置，这是自己计算后加上的，想不明白是什么造成了位置偏移*/
+    display: inline-block;
+}
+
+.main-right-top {
+    width: 940px;
+    height: 280px;
+    margin-bottom: 10px;
+    position: relative;
+}
+/*
+.main-right-top-container {
+    width: 690px;
+    height: 280px;
+    margin-right: 10px;
+    display: inline-block;
+    background: #777;
+}
+*/
+.slide-wrap {
+    width: 520px;
+    height: 280px;
+    margin-right: 10px;
+    background: #fafafa;
+    display: inline-block;
+}
+
+.slide-wrap-img {
+    width: 520px;
+    height: 280px;
+}
+
+.slide-wrap1 {
+    width: 160px;
+    height: 280px;
+    display: inline-block;/*教训经验，一开始发现不用div包裹图像样式，直接就写图像样式，
+    图像也可以呈现，后面出现问题，几个图像竖着排列，到处加display都没有，折腾好久！*/
+}
+.slide-wrap-img2 {
+    width: 160px;
+    height: 280px;
+    /* margin-left: -2px; */
+    position: relative;
+}
+
+.slide-wrap3 {
+    width: 238px;
+    height: 278px;
+    margin-left: 10px;/*原本是10px，为了去掉标签间的空格，自己改了，不知道准不准确，没有明确数据*/
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #eee;
+    position: absolute;
+}
+
+.right-brands {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    /* display: block; */
+    text-align: center;
+    color: #f40;
+    font-size: 14px;
+}
+
+
+.right-brands-list {
+    width: 238px;
+    height: 248px;
+    display: inline-block;
+}
+
+.right-brands-list-li {
+    float: left;
+    width: 119px;
+    height: 62px;
+    line-height: 60px;
+    margin-left: -1px;
+    margin-top: -1px;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    text-align: center;
+    position: relative;  
+    display: inline-block; 
+}
+
+.right-brands-list-liimg {
+   width: 119px;
+   height: 61px;
+   display: inline-block;
+}
+
+.te-9-kuai-9 {
+    font-size: 21px;
+    color: #f03725;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.slide-bottom {
+    width: 950px;/*以原值940，，2不改大一些图片就排第二行了*/
+    height: 238px;
+    /*position: absolute;*/
+
+    position: relative;
+    display: inline-block;
+}
+  /*好特么烦，这几个图像一直不在同一水平同一行*/
+.slide-wrap4 {
+    width: 520px;
+    height: 100%;
+    background: #fff;
+
+    margin-right: 8px;/*有因有空格*/
+    position: relative;
+    display: inline-block;
+    /*position: relative;*/
+}
+
+.slide-wrap4-top {
+    line-height: 20px;
+  /*  width: 100%;   
+    display: block;
+    position: relative;*/
+    border-bottom: 2px solid #fd3f31;
+}
+ 
+.slide-wrap4-top-tain {
+    color: #fd3f31;
+    line-height: 20px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+}
+.slide-wrap4-top-tain2 {
+    line-height: 17px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #9b9b9b;
+    position: relative;
+}
+
+.content-bottom {
+    width: 520px;
+    height: 205px;
+    margin-top: 12px;
+    /*position: relative;
+    display: inline-block;*/
+}
+
+.pub-con-wrap {
+    width: 255px;
+    height: 204px;
+    margin-right: 6px;/*原本值是10px.有标签间的空格，自己改成6，很烦，很多时候不确定改的
+    值，也不太对的上*/
+   /* position: relative;*/
+    
+}
+
+.pub-con-wrap-img1 {
+    width: 255px;
+    height: 204px;
+    left: -2px; /*用来去掉标签之间的空格，有别的简介准确有效的办法吗？*/
+}
+
+.pub-con-wrap2 {
+    width: 255px;
+    height: 204px;
+    position: relative;
+}
+
+.pub-con-wrap3 {
+    width: 160px;
+    height: 100%;
+    margin-right: 8px;
+
+   
+    display: inline-block;
+}
+.pub-con-wrap3-img3 {
+    width: 160px;
+    height: 238px;
+    position: relative;
+}   
+
+.right-baner {
+    width: 238px;
+    height: 236px;
+    border: 1px solid #eee;
+    display: inline-block;
+    position: absolute;
+   
+}
+
+.right-baner-1 {
+    width: 214px;
+    height: 110px;
+    padding: 18px 12px 0;
+    position: relative;
+     list-style: none;
+}
+
+.right-baner-2 {
+    margin-bottom: 14px;
+    width: 214px;
+    height: 17px;
+    position: relative;
+}
+
+.right-baner-2-a {
+    height: 16px;
+    line-height: 16px;
+    margin-right: 8px;
+    color: #fff;
+    padding: 0 2px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+
+.right-baner-2-a1 {
+background-image: linear-gradient(
+134deg
+,#c86dd7 0,#7f23ae 100%);
+}
+
+.right-baner-2-a2 {
+background-image: linear-gradient(
+141deg
+,#ff7f04 0,#fc1100 100%);
+}
+
+.right-baner-2-s {
+    display: inline-block;
+    line-height: 17px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    color: #9b9b9b;
+    vertical-align: middle;
+    /*text-overflow: ellipsis;
+    max-width: 168px;
+    overflow: hidden;
+    white-space: nowrap;*/
+}
+
+
+/*  图片专区 */
+.pc-item {
+    width: 1190px;
+    /*height: 100%;  高度数据和官网不太一样，想用100%，但这样下面的内容不显示了*/
+    height: 1124px;
+    margin: 25px auto;
+    padding-top: 1px;
+    top: 132px;
+    position: relative;
+}
+
+.pc-item-title {
+    
+    line-height: 25px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #fd3f31;
+    margin-bottom: 7px;
+}
+
+.pc-item-list {
+    width: 1190px;
+    height: 100%;
+    font-size: 0;/*这里作用是为了消除块元素之间的空格吗？*/
+    position: relative;
+    font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',sans-serif;
+    border-top: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+}
+
+.pc-items-item {
+    width: 236px;
+    height: 368px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #f2f2f2;
+    border-top: none;
+    border-left: none;
+    background: #fff;
+  
+}
+
+.pc-item-a {
+    display: inline-block;
+    width: 234px;
+    height: 366px;
+    box-sizing: border-box;
+    padding: 22px 20px 0;
+    background: #fff;
+    position: relative;
+}
+.pc-item-a-img {
+    width: 198px;
+    height: 198px;
+   /* max-width: 100%8*/
+}
+
+.items-item-title {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 20px;
+    padding-top: 10px;
+    white-space: nowrap;/* 强制不换行 */
+    overflow: hidden;/* 超过的部分隐藏 */
+    text-overflow: ellipsis;/* 打点展示 */
+
+}
+
+.icon-img {
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.title-text {
+    white-space: nowrap;
+    font-family: PingFangSC-Regular;/* 想把多出的隐藏起来，但没实现*/
+    font-size: 14px;
+    color: #9b9b9b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tip-con {
+    margin-top: 4px;
+    height: 16px;
+    width: 100%;
+}
+
+.coupon-icon {
+    display: inline-block;
+    color: #fd3f31;
+    font-size: 12px;
+    /* overflow: hidden; */
+    vertical-align: middle;/*垂直居中*/
+}
+
+.coupon-icon-text {
+    margin: 0 auto;
+    height: 16px;
+    line-height: 14px;
+    padding: 0 2px;
+    border: 1px solid #fd3f31;
+    border-right: none;
+    /* border-top-left-radius: 2px; */
+    /* border-bottom-left-radius: 2px;*/
+}
+
+.coupon-icon-num {
+    height: 16px;
+    line-height: 14px;
+    border: 1px solid #fd3f31;
+    padding: 0 2px;
+    /* border-top-right-radius: 2px; */
+    /* border-bottom-right-radius: 2px;*/
+}
+
+.price-icon {
+    width: 194;
+    height: 25px;
+    padding: 6px 0 0;
+    line-height: 1.6;
+}
+
+.coupon-price-title {
+    /*vertical-align: baseline; */
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #fd3f31;
+}
+
+.coupon-price-after {
+    margin-left: 4px;
+    vertical-align: baseline;
+    /* text-align: left; */
+    /* line-height: 25px; */
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #fd3f31;
+}
+
+.coupon-price-old {
+    margin-left: 8px;
+    /* vertical-align: baseline; */
+    text-decoration: line-through;
+    /* line-height: 20px; */
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+.seller-info {
+    width: 194px;
+    height: 17px;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 17px;
+    background-color: #fff;
+}
+
+.seller-info-1 {
+    color: #fd3f31;
+    font-size: 11px;
+    margin-right: 2px;
+    margin-left: -3.7px;
+}
+
+.item-footer {
+    width: 194px;
+    height: 0;
+    margin-top: 4px;
+    border-top: 1px solid #f2f2f2;
+    padding: 9px 0;
+    /*position: absolute;*/
+}
+
+.item-footer-wei {
+    position: relative; 
+    right: 0;
+    /*top: 9px;*/
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 17px;
+    background: #fff;
+    padding-left: 12px;
+    vertical-align: middle;
+}
+
+
+.floor-pager {
+    width: 1190px;
+    height: 32px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.page {
+    /*height: 24px;
+    background: #f03725;*/
+    color: #fff;
+    border-color: transparent;
+    display: inline-block; /*一般作用是不换行，但有时候有放大字体作用，何解？*/
+    border: 1px solid #ccc;
+    font-size: 12px;
+    margin-left: 4px;
+    padding: 3px;
+    width: 30px;
+    height: 24px;
+    line-height: 24px;
+    /* text-align: center; */
+    color: #777;
+    /* cursor: pointer; */
+    /* text-decoration: none;*/
+}
+.page1 {
+    background: #f03725;
+    color: #fff;
+}
+
+
+/*  底部信息   */
+.footer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    padding: 30px 10px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 2.4; 
+    font-family: 'helvetica neue',tahoma,'hiragino sans gb',
+    stheiti,'wenquanyi micro hei',\\5FAE\\8F6F\\96C5\\9ED1,\\5B8B\\4F53,
+    sans-serif;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>     
+   <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+     <div class="headMessage"><!--原本headMessage是放在这个div里，但放了之后失去了不换行的效果-->
+        <ul class=" headzuo">
+            <li class="dangezuo">新闻</li>
+            <li class="dangezuo">hao123</li>
+            <li class="dangezuo">地图</li>
+            <li class="dangezuo">直播</li>
+            <li class="dangezuo">视频</li>
+            <li class="dangezuo">贴吧</li>
+            <li class="dangezuo">学术</li>
+            <li class="dangezuo">更多</li><!--首行顶部和底部出现margin=13,不清楚怎么回事-->
+         </ul>
+        <div class="headyou">
+            <div class="fr">
+                <span class="headshezhi">设置</span>
+                <span class="headdenglu">登录</span>
+            </div>
+        </div>   
+     </div>
+     <div class="headsousuo"><!--原本看样式格式准备设此class.width=654px,把输入这一部分
+        包裹起来，但是造成搜索版块不在中间，分成俩个大板块,现在加的这个class其实也没什么作用了-->
+         <div class="imagewai">
+             <div class="image"></div><!--图片引用clsss不生效-->
+         </div> 
+         <div class="kuang"><!--原本看样式格式准备设此class.width=654px-->
+             <input type="text" class=" neikuang shuru" ">
+             <button type="submit" class="button">百度一下</button><!--搜索框和点击框有间隔
+            ，这里是div包裹input和button,没办法，可能是由于由于上上个注释写到的原因，尝试
+            各自用div包裹后点击框位置发生改变，也因此，相机小图标代码就没写-->
+             <div class="neironghead">
+                 <div class="neironghead1 fl">百度热搜</div>   
+                 <div class="neironghead1 neironghead2 fr">换一换</div>
+             </div>
+             <div class="zhengwenzuo">
+                 <div class="zhengwen1">
+                     <span class="zhengwen1-1">1</span>
+                     <span class="zhengwen1-2">广东新增6例本土确诊病例</span>
+                     <span class="zhengwen1-3">热</span>
+                 </div>
+                 <div class="zhengwen1">
+                     <span class="zhengwen1-1" style="color: #f60">2</span>
+                     <span class="zhengwen1-2">云南离群独象掉队12公里</span>
+                 </div> 
+                 <div class="zhengwen1">
+                    <span class="zhengwen1-1" style="color: #faa90e">3</span>
+                    <span class="zhengwen1-2"> 南京胖哥已从ICU转入普通病房</span>
+                </div>                 
+             </div>
+             <div class="zhengwenyou ">
+                 <div class="zhengwen1">
+                     <span class="zhengwen1-1 zhengwen4-1" >4</span>
+                     <span class="zhengwen1-2">拜登撤销对TikTok及微信禁令</span>
+                 </div>
+                 <div class="zhengwen1">
+                    <span class="zhengwen1-1 zhengwen4-1">5</span>
+                    <span class="zhengwen1-2">南非女子诞下十胞胎</span>
+                    <span class="zhengwen1-3" style="background-color: #ff455b">新</span>
+                </div >
+                <div class="zhengwen1">
+                    <span class="zhengwen1-1 zhengwen4-1">6</span>
+                    <span>第五批国家级非遗名录公布</span><!--中间文字这里可以不用加class标签了，
+                    上一级div已经包含其中样式了。-->
+                </div>
+             </div>
+        </div>
+    </div>  
+
+    <div class="wei">
+        <ul class="ul">
+             <li class="wei1">设为首页</li>
+             <li class="wei1">关于百度</li>
+             <li class="wei1">About Baidu</li>
+             <li class="wei1">使用百度前必读</li>
+             <li class="wei1">意见反馈</li>
+             <li class="wei1">帮助中心</li>
+             <li class="wei1">京公网安备11000002000001</li>
+             <li class="wei1">京ICP证030173</li>
+             <li class="wei1">@2021baidu</li>
+             <li class="wei1">(京)-经营性-2017-0020</li>
+             <li class="wei1">信息</li>
+        </ul>
+    </div>
+       <!--<a  class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>
+        <a href="#" class="wei1"></a>-->   
+</html>
